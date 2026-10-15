@@ -1,0 +1,66 @@
+```html
+<html>
+<head>
+<style>
+body { font-family: Arial; background: #eee; }
+header { background: navy; color: white;
+text-align: center; padding: 10px; }
+
+nav { display: flex; justify-content: center; gap: 20px; }
+
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 15px;
+padding: 20px;
+}
+
+.card {
+background: white; padding: 15px;
+text-align: center;
+animation: fade 1s;
+}
+
+button { background: navy; color: white; padding: 8px; }
+
+@keyframes fade {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+@media(max-width: 600px) {
+.container { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1>Online Learning</h1>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Courses</a>
+</nav>
+
+<div class="container">
+<div class="card">
+<h2>Web Development</h2>
+<p>Instructor: Rahul</p>
+<p>Duration: 3 Months</p>
+<p>Price: Rs.2000</p>
+<button>Enroll Now</button>
+</div>
+
+<div class="card">
+<h2>Python</h2>
+<p>Instructor: Priya</p>
+<p>Duration: 2 Months</p>
+<p>Price: Rs.1500</p>
+<button>Enroll Now</button>
+</div>
+</div>
+</body>
+</html>
+```
